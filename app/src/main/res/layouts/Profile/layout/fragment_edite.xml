@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Controller.EditeFragment">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="7sp"
+            android:text="save"
+            android:textColor="#a9adac"
+            android:textSize="20sp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pro_edit_image"
+            android:layout_below="@+id/edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/group_59"/>
+        <ScrollView
+            android:layout_below="@id/pro_edit_image"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:text="display name"
+            />
+            <EditText
+                android:id="@+id/edit_username"
+                android:hint="       your name"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/selector_edittext"
+                android:layout_marginBottom="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Contacts"
+                />
+            <EditText
+                android:id="@+id/edit_phone"
+                android:drawableLeft="@drawable/ic_phone_24_px"
+                android:hint="    your phone"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/selector_edittext"/>
+            <EditText
+                android:id="@+id/edit_mail"
+                android:drawableLeft="@drawable/ic_markunread_24_px"
+                android:hint="    your email"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/selector_edittext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Educations"
+                />
+            <EditText
+                android:id="@+id/edit_shcool"
+                android:drawableLeft="@drawable/ic_markunread_mailbox_24_px"
+                android:hint="    your shcool"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/selector_edittext"/>
+            <EditText
+                android:id="@+id/edit_faculty"
+                android:drawableLeft="@drawable/ic_markunread_mailbox_24_px"
+                android:hint="    your faculty"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/selector_edittext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="living places"
+                />
+
+            <EditText
+                android:id="@+id/edit_place"
+                android:drawableLeft="@drawable/ic_account_balance_24_px"
+                android:hint="    your place"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/selector_edittext"/>
+            <EditText
+                android:id="@+id/edit_place2"
+                android:drawableLeft="@drawable/ic_account_balance_24_px"
+                android:hint="    your place"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/selector_edittext"/>
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

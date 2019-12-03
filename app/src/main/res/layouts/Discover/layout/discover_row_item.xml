@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60.3dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+ <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dis_profile_image"
+        android:layout_width="44.9dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/profile_picture" />
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+       android:layout_marginLeft="77dp">
+
+       <TextView
+           android:id="@+id/dis_txt_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:lineSpacingExtra="7sp"
+           android:text="Enas Gaber"
+           android:textColor="#535554"
+           android:textSize="20sp" />
+    <TextView
+        android:id="@+id/dis_txt_faculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#a9adac"
+        android:lineSpacingExtra="4sp"
+        android:gravity="center_horizontal"
+        android:text="faculty of computers and..."
+        />
+</LinearLayout>
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/status_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_friend_icon"
+        android:layout_marginRight="18.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+</RelativeLayout>

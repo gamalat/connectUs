@@ -1,0 +1,6 @@
+drop table if exists user
+create table user (id string unique,userName string,userSubdata string,userImage string,friendshipStatus string,primary key(id) )
+drop table if exists post
+create table post (id string references user(id),text string,imagePath string,postPrivacy string)
+drop table if exists postjoin
+create table postjoin (id string, userName string,userImage,text string,imagePath string,postPrivacy string)

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreen">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="53dp"
+                android:id="@+id/enteruser_image"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@color/White"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/group_59"/>
+            <LinearLayout
+               android:layout_marginTop="130dp"
+                 android:layout_below="@+id/enteruser_image"
+                android:layout_width="245dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:hint=" Display name"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/selector_edittext"
+                />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="245dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:text="START"
+                android:textColor="@color/button"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="400dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
